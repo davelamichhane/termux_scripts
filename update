@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+# Update existing files to gitlab
+git pull
+git add $1
+git commit -m "updated $1"
+git push origin main
+git log --graph --oneline
